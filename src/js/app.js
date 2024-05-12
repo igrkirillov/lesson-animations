@@ -5,5 +5,8 @@ let mainElement;
 
 document.addEventListener("DOMContentLoaded", () => {
   mainElement = document.querySelector("main");
-  new CollapsibleWidget(mainElement, (ownerElement) => new ArticleWidget(ownerElement));
+  new CollapsibleWidget(
+    mainElement,
+    (ownerElement) => new ArticleWidget(ownerElement)
+  );
 });

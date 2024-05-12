@@ -33,7 +33,9 @@ export default class CollapsibleWidget {
 
   onButtonClick() {
     const containerElement = this.collapsibleContainerElement;
-    if (containerElement.classList.contains("collapsible-container-collapsed")) {
+    if (
+      containerElement.classList.contains("collapsible-container-collapsed")
+    ) {
       containerElement.classList.remove("collapsible-container-collapsed");
     } else {
       containerElement.classList.add("collapsible-container-collapsed");
